@@ -31,4 +31,3 @@ app.use(express.static(path.resolve(__dirname, '..', 'build')));
 app.listen(PORT, () => {
   console.log('Listening on port 3000');
 });
-// server side support for jsx babel
