@@ -1,6 +1,9 @@
 import { createPortal } from 'react-dom';
-const modalRoot = document.querySelector('#modal');
+let modalRoot;
 
-const Modal = ({ children }) => createPortal(children, modalRoot);
+const Modal = ({ children }) => {
+  modalRoot = modalRoot ? modalRoot : document.querySelector('#modal');
+  createPortal(children, modalRoot);
+};
 
 export default Modal;
