@@ -24,7 +24,7 @@ const App = () => {
         Click To See Modal
       </button>
       <button onClick={handleFindDOMNode} className='button'>
-        Find The Button Element and Make It Black
+        Find The Modal Button and Change its Background Color
       </button>
       <button onClick={handleUnmount} className='button'>
         Unmount App
